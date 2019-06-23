@@ -1,28 +1,18 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang="pug">
+v-app
+  v-toolbar(app)
+    v-toolbar-title.headline 청소 뽑기
+  v-content
+    home-page
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomePage from '@/components/HomePage'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    HelloWorld
+    HomePage
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
